@@ -86,6 +86,8 @@ pcap:
 ```
 Then, edit according to your environment.
 
+If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/discussions/107#discussioncomment-6706349) might help to solve it.
+
 ---
 
 <h2 id="changelog">Changelog (summary)</h2>

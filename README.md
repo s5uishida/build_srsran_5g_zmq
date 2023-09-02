@@ -13,6 +13,17 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 
 ---
 
+<h2 id="toc">Table of Contents</h2>
+
+- [Install the required libraries including ZeroMQ](#install_libs)
+- [Clone srsRAN_Project](#clone_srsran)
+- [Build srsRAN_Project 5G RAN on Virtualbox VM](#build)
+- [Create the configuration file of gNodeB](#create_gnb_config)
+- [Issues](#issues)
+- [Changelog (summary)](#changelog)
+
+---
+
 <h2 id="install_libs">Install the required libraries including ZeroMQ</h2>
 
 ```
@@ -86,7 +97,10 @@ pcap:
 ```
 Then, edit according to your environment.
 
-If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
+<h2 id="issues">Issues</h2>
+
+- If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
+- According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 
 ---
 

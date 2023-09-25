@@ -13,7 +13,9 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 
 ---
 
-<h2 id="toc">Table of Contents</h2>
+<a id="toc"></a>
+
+## Table of Contents
 
 - [Install the required libraries including ZeroMQ](#install_libs)
 - [Clone srsRAN_Project](#clone_srsran)
@@ -24,19 +26,25 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 
 ---
 
-<h2 id="install_libs">Install the required libraries including ZeroMQ</h2>
+<a id="install_libs"></a>
+
+## Install the required libraries including ZeroMQ
 
 ```
 apt install cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev libzmq3-dev
 ```
 
-<h2 id="clone_srsran">Clone srsRAN_Project</h2>
+<a id="clone_srsran"></a>
+
+## Clone srsRAN_Project
 
 ```
 git clone https://github.com/srsran/srsRAN_Project.git
 ```
 
-<h2 id="build">Build srsRAN_Project 5G RAN on Virtualbox VM</h2>
+<a id="build"></a>
+
+## Build srsRAN_Project 5G RAN on Virtualbox VM
 
 According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` to cmake options.
 ```
@@ -47,7 +55,9 @@ cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
 make -j`nproc`
 ```
 
-<h2 id="create_gnb_config">Create the configuration file of gNodeB</h2>
+<a id="create_gnb_config"></a>
+
+## Create the configuration file of gNodeB
 
 Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup) as the original file.
 ```
@@ -97,13 +107,17 @@ pcap:
 ```
 Then, edit according to your environment.
 
-<h2 id="issues">Issues</h2>
+<a id="issues"></a>
+
+## Issues
 
 - If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
 - According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 
 ---
 
-<h2 id="changelog">Changelog (summary)</h2>
+<a id="changelog"></a>
+
+## Changelog (summary)
 
 - [2023.08.10] Initial release.

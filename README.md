@@ -111,6 +111,8 @@ Then, edit according to your environment.
 
 ## Issues
 
+If the latest `main` branch doesn't work, you may try the latest `release` version.
+
 - If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
 - According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 

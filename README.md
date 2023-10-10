@@ -114,8 +114,8 @@ Then, edit according to your environment.
 
 If the latest `main` branch doesn't work, you may try the latest `release` version.
 
-- If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
-- According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
+1. If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
+2. According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 
 <a id="ver_list"></a>
 
@@ -123,7 +123,8 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 
 I simply confirmed the operation of the following versions.
 ```
-commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07
+commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 - no issues
+commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 - for issues 1 and 2
 ```
 
 ---

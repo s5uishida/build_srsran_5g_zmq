@@ -7,7 +7,7 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 - ZeroMQ-based Setup - https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup
 - Configuration Reference - https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html
 
-**4GB or more memory is required to build.**
+**4GB or more memory is required to build. And 2 CPU cores or more are required to run.**
 
 Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5uishida/build_srsran_4g_zmq_disable_rf_plugins) for how to build and configure this RF simulated UE.
 

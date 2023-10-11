@@ -124,8 +124,8 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 
 I simply confirmed the operation of the following versions.
 ```
-commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 - for issues 3
-commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 - for issues 1 and 2
+commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 and issues 3
+commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
 ```
 
 ---

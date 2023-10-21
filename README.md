@@ -117,6 +117,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 1. If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
 2. According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 3. According to [here](https://github.com/srsran/srsRAN_Project/issues/241#issuecomment-1756599022), 2 CPU cores or more are required to run.
+4. According to [here](https://github.com/srsran/srsRAN_Project/issues/263), UE(`ue_zmq.conf`) failed to connect to Open5GS via gNodeB of srsRAN_Project 23.10. [This](https://github.com/srsran/srsRAN_Project/issues/263#issuecomment-1773756230) solved it.
 
 <a id="ver_list"></a>
 
@@ -124,6 +125,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 
 I simply confirmed the operation of the following versions.
 ```
+commit:e38e418bda8432397b2fa7dc399cb7afde3c3b95 on 2023.10.20 and issues 3, 4
 commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 and issues 3
 commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
 ```
@@ -134,5 +136,6 @@ commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
 
 ## Changelog (summary)
 
+- [2023.10.21] Added the case of srsRAN_Project 23.10.
 - [2023.10.10] Added a list of confirmed versions.
 - [2023.08.10] Initial release.

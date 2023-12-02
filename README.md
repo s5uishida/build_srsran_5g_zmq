@@ -127,6 +127,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 
 I simply confirmed the operation of the following versions.
 ```
+commit:374200deefd8e1b96fab7328525fd593a808a641 on 2023.10.23 and issues 3
 commit:e38e418bda8432397b2fa7dc399cb7afde3c3b95 on 2023.10.20 and issues 3, 4
 commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 and issues 3
 commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
@@ -138,6 +139,7 @@ commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
 
 ## Changelog (summary)
 
+- [2023.12.02] Updated a list of confirmed versions.
 - [2023.11.02] Updated `gnb_zmq.yaml`.
 - [2023.10.21] Added the case of srsRAN_Project 23.10.
 - [2023.10.10] Added a list of confirmed versions.

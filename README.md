@@ -126,14 +126,13 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 ## Confirmed Version List
 
 I simply confirmed the operation of the following versions.
-```
-commit:374200deefd8e1b96fab7328525fd593a808a641 on 2023.10.23 and issues 3
-commit:e38e418bda8432397b2fa7dc399cb7afde3c3b95 on 2023.10.20 and issues 3, 4
-commit:5e6f50a202c6efa671d5b231d7c911dc6c3d86ed on 2023.09.20 and issues 3
-commit:1afd7240f2b5e2061ab4158e8fcdacb15961813a on 2023.08.07 and issues 1, 2
-```
 
----
+| Version | Commit | Date | Issues |
+| --- | --- | --- | -- |
+| 23.10.1 | `374200deefd8e1b96fab7328525fd593a808a641` | 2023.10.23 | 3 |
+| 23.10 | `e38e418bda8432397b2fa7dc399cb7afde3c3b95` | 2023.10.20 | 3, 4 |
+| 23.5+ | `5e6f50a202c6efa671d5b231d7c911dc6c3d86ed` | 2023.09.20 | 3 |
+| 23.5+ | `1afd7240f2b5e2061ab4158e8fcdacb15961813a` | 2023.08.07 | 1, 2 |
 
 <a id="changelog"></a>
 

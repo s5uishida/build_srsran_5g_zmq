@@ -69,7 +69,7 @@ Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/projec
 cd srsRAN_Project/build/apps/gnb
 wget <link of "gNB config">
 ```
-For reference, `gnb_zmq.yaml` on 2023.10.24 is as follows.
+For reference, `gnb_zmq.yaml` on 2023.12.07 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 
@@ -82,24 +82,27 @@ amf:
 
 ru_sdr:
   device_driver: zmq                # The RF driver name.
-  device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=11.52e6 # Optionally pass arguments to the selected RF driver.
-  srate: 11.52                      # RF sample rate might need to be adjusted according to selected bandwidth.
+  device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
+  srate: 23.04                      # RF sample rate might need to be adjusted according to selected bandwidth.
   tx_gain: 75                       # Transmit gain of the RF might need to adjusted to the given situation.
   rx_gain: 75                       # Receive gain of the RF might need to adjusted to the given situation.
 
 cell_cfg:
   dl_arfcn: 368500                  # ARFCN of the downlink carrier (center frequency).
   band: 3                           # The NR band.
-  channel_bandwidth_MHz: 10         # Bandwith in MHz. Number of PRBs will be automatically derived.
+  channel_bandwidth_MHz: 20         # Bandwith in MHz. Number of PRBs will be automatically derived.
   common_scs: 15                    # Subcarrier spacing in kHz used for data.
   plmn: "00101"                     # PLMN broadcasted by the gNB.
   tac: 7                            # Tracking area code (needs to match the core configuration).
   pdcch:
+    common:
+      ss0_index: 0                  # Set search space zero index to match srsUE capabilities
+      coreset0_index: 12            # Set search CORESET Zero index to match srsUE capabilities
     dedicated:
       ss2_type: common              # Search Space type, has to be set to common
       dci_format_0_1_and_1_1: false # Set correct DCI format (fallback)
   prach:
-    prach_config_index: 1           # Set PRACH configuration index to 1. 
+    prach_config_index: 1           # Sets PRACH config to match what is expected by srsUE
 
 log:
   filename: /tmp/gnb.log            # Path of the log file.
@@ -133,6 +136,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 23.10.1+ | `2f90c8b60e9396a7aed59645c98dbcbccda2bf7c` | 2024.03.25 | 3 |
 | 23.10.1 | `374200deefd8e1b96fab7328525fd593a808a641` | 2023.10.23 | 3 |
 | 23.10 | `e38e418bda8432397b2fa7dc399cb7afde3c3b95` | 2023.10.20 | 3, 4 |
 | 23.5+ | `5e6f50a202c6efa671d5b231d7c911dc6c3d86ed` | 2023.09.20 | 3 |
@@ -142,6 +146,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2024.03.29] Updated a list of confirmed versions.
 - [2023.12.02] Updated a list of confirmed versions.
 - [2023.11.02] Updated `gnb_zmq.yaml`.
 - [2023.10.21] Added the case of srsRAN_Project 23.10.

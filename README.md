@@ -27,6 +27,7 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 - [Create the configuration file of gNodeB](#create_gnb_config)
 - [Issues](#issues)
 - [Confirmed Version List](#ver_list)
+- [Sample Configurations](#sample_conf)
 - [Changelog (summary)](#changelog)
 
 ---
@@ -141,6 +142,13 @@ I simply confirmed the operation of the following versions.
 | 23.10 | `e38e418bda8432397b2fa7dc399cb7afde3c3b95` | 2023.10.20 | 3, 4 |
 | 23.5+ | `5e6f50a202c6efa671d5b231d7c911dc6c3d86ed` | 2023.09.20 | 3 |
 | 23.5+ | `1afd7240f2b5e2061ab4158e8fcdacb15961813a` | 2023.08.07 | 1, 2 |
+
+<a id="sample_conf"></a>
+
+## Sample Configurations
+
+- [Open5GS 5GC & srsRAN 5G with ZeroMQ UE / RAN Sample Configuration](https://github.com/s5uishida/open5gs_5gc_srsran_sample_config)
+- [free5GC 5GC & srsRAN 5G with ZeroMQ UE / RAN Sample Configuration](https://github.com/s5uishida/free5gc_srsran_sample_config)
 
 <a id="changelog"></a>
 

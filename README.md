@@ -70,7 +70,7 @@ Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/projec
 cd srsRAN_Project/build/apps/gnb
 wget <link of "gNB config">
 ```
-For reference, `gnb_zmq.yaml` on 2023.12.07 is as follows.
+For reference, `gnb_zmq.yaml` on 2024.04.23 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 
@@ -137,6 +137,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.04 | `1483bda3091420cf7270eacdf31de932865c6294` | 2024.04.22 | 3 |
 | 23.10.1+ | `2f90c8b60e9396a7aed59645c98dbcbccda2bf7c` | 2024.03.25 | 3 |
 | 23.10.1 | `374200deefd8e1b96fab7328525fd593a808a641` | 2023.10.23 | 3 |
 | 23.10 | `e38e418bda8432397b2fa7dc399cb7afde3c3b95` | 2023.10.20 | 3, 4 |
@@ -154,6 +155,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2024.05.02] Updated a list of confirmed versions.
 - [2024.03.29] Updated a list of confirmed versions.
 - [2023.12.02] Updated a list of confirmed versions.
 - [2023.11.02] Updated `gnb_zmq.yaml`.

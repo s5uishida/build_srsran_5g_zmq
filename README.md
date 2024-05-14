@@ -7,7 +7,7 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 - ZeroMQ-based Setup - https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup
 - Configuration Reference - https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html
 
-The specification of the OS that have been confirmed to work is as follows.
+The specification of the VM that have been confirmed to work is as follows.
 | OS | CPU(Min) | Memory(Min) | HDD(Min) |
 | --- | --- | --- | --- |
 | Ubuntu 24.04 | 2 | 4GB | 20GB |

@@ -7,6 +7,11 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 - ZeroMQ-based Setup - https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup
 - Configuration Reference - https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html
 
+The specification of the OS that have been confirmed to work is as follows.
+| OS | CPU(Min) | Memory(Min) | HDD(Min) |
+| --- | --- | --- | --- |
+| Ubuntu 24.04 | 2 | 4GB | 20GB |
+
 **4GB or more memory is required to build. And 2 CPU cores or more are required to run.**
 
 Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5uishida/build_srsran_4g_zmq_disable_rf_plugins) for how to build and configure this RF simulated UE.
@@ -140,6 +145,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.04+ | `78238fd15e4cd82a6324d6dbbb612ac5584b13ea` | 2024.05.13 | 3 |
 | 24.04 | `1483bda3091420cf7270eacdf31de932865c6294` | 2024.04.22 | 3 |
 | 23.10.1+ | `2f90c8b60e9396a7aed59645c98dbcbccda2bf7c` | 2024.03.25 | 3 |
 | 23.10.1 | `374200deefd8e1b96fab7328525fd593a808a641` | 2023.10.23 | 3 |
@@ -158,6 +164,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2024.05.14] Updated a list of confirmed versions. And changed the OS from Ubuntu 22.04 to 24.04.
 - [2024.05.02] Updated a list of confirmed versions.
 - [2024.03.29] Updated a list of confirmed versions.
 - [2023.12.02] Updated a list of confirmed versions.

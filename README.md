@@ -10,7 +10,7 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 The specification of the VM that have been confirmed to work is as follows.
 | OS | CPU (Min) | Memory (Min) | HDD (Min) |
 | --- | --- | --- | --- |
-| Ubuntu 24.04 | 2 | 4GB | 20GB |
+| Ubuntu 24.04 | 2 | 4GB | 10GB |
 
 **4GB or more memory is required to build. And 2 CPU cores or more are required to run.**
 

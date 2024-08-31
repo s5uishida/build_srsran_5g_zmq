@@ -145,6 +145,8 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652` | 2024.07.31 | 3 |
+| 24.04+ | `c33cacba7d940e734ac7bad08935cbc35578fad9` | 2024.06.10 | 3 |
 | 24.04+ | `78238fd15e4cd82a6324d6dbbb612ac5584b13ea` | 2024.05.13 | 3 |
 | 24.04 | `1483bda3091420cf7270eacdf31de932865c6294` | 2024.04.22 | 3 |
 | 23.10.1+ | `2f90c8b60e9396a7aed59645c98dbcbccda2bf7c` | 2024.03.25 | 3 |
@@ -164,6 +166,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2024.08.31] Updated a list of confirmed versions.
 - [2024.05.14] Updated a list of confirmed versions. And changed the OS from Ubuntu 22.04 to 24.04.
 - [2024.05.02] Updated a list of confirmed versions.
 - [2024.03.29] Updated a list of confirmed versions.

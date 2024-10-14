@@ -1,6 +1,5 @@
 # Build srsRAN_Project 5G RAN with ZeroMQ
 srsRAN_Project software suite includes a virtual radio which uses the ZeroMQ networking library to transfer radio samples between applications. Therefore, in order to confirm the facilities of 5GC, I will describe the simple procedure for building the virtual gNodeB instead of the real device.
-**Note that this section describes how to build srsRAN_Project in Virtualbox VM.**
 
 Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 - Installation Guide - https://docs.srsran.com/projects/project/en/latest/user_manuals/source/installation.html
@@ -28,7 +27,7 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 
 - [Install the required libraries including ZeroMQ](#install_libs)
 - [Clone srsRAN_Project](#clone_srsran)
-- [Build srsRAN_Project 5G RAN on Virtualbox VM](#build)
+- [Build srsRAN_Project 5G RAN](#build)
 - [Create the configuration file of gNodeB](#create_gnb_config)
 - [Issues](#issues)
 - [Confirmed Version List](#ver_list)
@@ -55,15 +54,18 @@ git clone https://github.com/srsran/srsRAN_Project.git
 
 <a id="build"></a>
 
-## Build srsRAN_Project 5G RAN on Virtualbox VM
+## Build srsRAN_Project 5G RAN
 
-According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` to cmake options.
 ```
 cd srsRAN_Project
 mkdir build
 cd build
-cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
+cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON
 make -j`nproc`
+```
+According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` to cmake options.
+```
+cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
 ```
 
 <a id="create_gnb_config"></a>

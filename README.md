@@ -77,25 +77,16 @@ Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/projec
 cd srsRAN_Project/build/apps/gnb
 wget <link of "gNB config">
 ```
-For reference, `gnb_zmq.yaml` on 2024.10.14 is as follows.
+For reference, `gnb_zmq.yaml` on 2024.04.23 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 
 # To run the srsRAN Project gNB with this config, use the following command: 
 #   sudo ./gnb -c gnb_zmq.yaml
 
-cu_cp:
-  amf:
-    addr: 10.53.1.2                 # The address or hostname of the AMF.
-    port: 38412
-    bind_addr: 10.53.1.1            # A local IP that the gNB binds to for traffic from the AMF.
-    supported_tracking_areas:
-      - tac: 7
-        plmn_list:
-          - plmn: "00101"
-            tai_slice_support_list:
-              - sst: 1
-  inactivity_timer: 7200            # Sets the UE/PDU Session/DRB inactivity timer to 7200 seconds. Supported: [1 - 7200].
+amf:
+  addr: 10.53.1.2                  # The address or hostname of the AMF.
+  bind_addr: 10.53.1.1             # A local IP that the gNB binds to for traffic from the AMF.
 
 ru_sdr:
   device_driver: zmq                # The RF driver name.
@@ -120,6 +111,9 @@ cell_cfg:
       dci_format_0_1_and_1_1: false # Set correct DCI format (fallback)
   prach:
     prach_config_index: 1           # Sets PRACH config to match what is expected by srsUE
+
+cu_cp:
+  inactivity_timer: 7200            # Sets the UE/PDU Session/DRB inactivity timer to 7200 seconds. Supported: [1 - 7200].
 
 log:
   filename: /tmp/gnb.log            # Path of the log file.
@@ -153,7 +147,6 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
-| 24.10 | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d` | 2024.10.14 | 3 |
 | 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652` | 2024.07.31 | 3 |
 | 24.04+ | `c33cacba7d940e734ac7bad08935cbc35578fad9` | 2024.06.10 | 3 |
 | 24.04+ | `78238fd15e4cd82a6324d6dbbb612ac5584b13ea` | 2024.05.13 | 3 |
@@ -175,7 +168,6 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
-- [2024.10.15] Updated a list of confirmed versions.
 - [2024.08.31] Updated a list of confirmed versions.
 - [2024.05.14] Updated a list of confirmed versions. And changed the OS from Ubuntu 22.04 to 24.04.
 - [2024.05.02] Updated a list of confirmed versions.

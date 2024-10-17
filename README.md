@@ -132,7 +132,7 @@ pcap:
   ngap_enable: false                # Set to true to enable NGAP PCAPs.
   ngap_filename: /tmp/gnb_ngap.pcap # Path where the NGAP PCAP is stored.
 ```
-Then, edit according to your environment.
+Then, edit according to your environment with reference to [this](https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html#id1).
 
 <a id="issues"></a>
 

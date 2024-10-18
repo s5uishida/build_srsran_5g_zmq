@@ -133,6 +133,7 @@ pcap:
   ngap_filename: /tmp/gnb_ngap.pcap # Path where the NGAP PCAP is stored.
 ```
 Then, edit `gnb_zmq.yaml` with reference to [this](https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html#id1) according to your environment.
+
 <a id="issues"></a>
 
 ## Issues

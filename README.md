@@ -9,7 +9,7 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 The specification of the VM that have been confirmed to work is as follows.
 | OS | CPU (Min) | Memory (Min) | HDD (Min) |
 | --- | --- | --- | --- |
-| Ubuntu 24.04 | 2 | 4GB | 10GB |
+| Ubuntu 24.04 | 4 | 4GB | 10GB |
 
 **4GB or more memory is required to build. And 2 CPU cores or more are required to run.**
 
@@ -81,7 +81,7 @@ Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/projec
 cd srsRAN_Project/build/apps/gnb
 wget <link of "gNB config">
 ```
-For reference, `gnb_zmq.yaml` on 2024.10.14 is as follows.
+For reference, `gnb_zmq.yaml` on 2024.12.17 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 
@@ -124,6 +124,8 @@ cell_cfg:
       dci_format_0_1_and_1_1: false # Set correct DCI format (fallback)
   prach:
     prach_config_index: 1           # Sets PRACH config to match what is expected by srsUE
+  pdsch:
+    mcs_table: qam64                # Sets PDSCH MCS to 64 QAM
 
 log:
   filename: /tmp/gnb.log            # Path of the log file.
@@ -148,6 +150,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 2. According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).
 3. According to [here](https://github.com/srsran/srsRAN_Project/issues/241#issuecomment-1756599022), 2 CPU cores or more are required to run.
 4. According to [here](https://github.com/srsran/srsRAN_Project/issues/263), UE(`ue_zmq.conf`) failed to connect to Open5GS via gNodeB of srsRAN_Project 23.10. [This](https://github.com/srsran/srsRAN_Project/issues/263#issuecomment-1773756230) solved it.
+5. According to [here](https://github.com/srsran/srsRAN_Project/discussions/995#discussioncomment-11634006), 4 CPU cores or more are required to run.
 
 <a id="ver_list"></a>
 
@@ -157,6 +160,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.10+ | `e5d5b44b92cf18d1bd1736da0148e5f9cce3721d` | 2024.12.03 | 5 |
 | 24.10 | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d` | 2024.10.14 | 3 |
 | 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652` | 2024.07.31 | 3 |
 | 24.04+ | `c33cacba7d940e734ac7bad08935cbc35578fad9` | 2024.06.10 | 3 |
@@ -179,6 +183,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2024.12.21] Updated a list of confirmed versions.
 - [2024.10.16] Updated a list of confirmed versions.
 - [2024.08.31] Updated a list of confirmed versions.
 - [2024.05.14] Updated a list of confirmed versions. And changed the OS from Ubuntu 22.04 to 24.04.

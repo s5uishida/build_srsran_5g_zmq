@@ -11,7 +11,7 @@ The specification of the VM that have been confirmed to work is as follows.
 | --- | --- | --- | --- |
 | Ubuntu 24.04 | 4 | 4GB | 10GB |
 
-**4GB or more memory is required to build. And 2 CPU cores or more are required to run.**
+**4GB or more memory is required to build. And 4 CPU cores or more are required to run.**
 
 Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5uishida/build_srsran_4g_zmq_disable_rf_plugins) for how to build and configure this RF simulated UE.
 

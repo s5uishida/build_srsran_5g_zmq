@@ -63,7 +63,11 @@ cd build
 cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON
 make -j`nproc`
 ```
-According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` to cmake options.
+If you do not want to build the `tests` target, add `-DBUILD_TESTS=OFF` option.
+```
+cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DBUILD_TESTS=OFF
+```
+According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` option.
 ```
 cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
 ```

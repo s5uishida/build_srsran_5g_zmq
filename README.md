@@ -63,7 +63,7 @@ cd build
 cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON
 make -j`nproc`
 ```
-If you do not want to build the `tests` target, add `-DBUILD_TESTS=OFF` option.
+If you do not want to build `tests` target, add `-DBUILD_TESTS=OFF` option.
 ```
 cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DBUILD_TESTS=OFF
 ```

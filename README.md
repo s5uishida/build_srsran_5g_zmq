@@ -81,7 +81,7 @@ Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/projec
 cd srsRAN_Project/build/apps/gnb
 wget <link of "gNB config">
 ```
-For reference, `gnb_zmq.yaml` on 2024.12.17 is as follows.
+For reference, `gnb_zmq.yaml` on 2025.01.15 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 

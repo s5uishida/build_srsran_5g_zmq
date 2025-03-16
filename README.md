@@ -126,6 +126,8 @@ cell_cfg:
     prach_config_index: 1           # Sets PRACH config to match what is expected by srsUE
   pdsch:
     mcs_table: qam64                # Sets PDSCH MCS to 64 QAM
+  pusch:
+    mcs_table: qam64                # Sets PUSCH MCS to 64 QAM
 
 log:
   filename: /tmp/gnb.log            # Path of the log file.
@@ -160,6 +162,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.10+ | `2be82d8ea38e3a729850b702254952c04118cc38` | 2025.03.14 | 5 |
 | 24.10+ | `e5d5b44b92cf18d1bd1736da0148e5f9cce3721d` | 2024.12.03 | 5 |
 | 24.10 | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d` | 2024.10.14 | 3 |
 | 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652` | 2024.07.31 | 3 |
@@ -183,6 +186,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2025.03.16] Updated a list of confirmed versions.
 - [2024.12.21] Updated a list of confirmed versions.
 - [2024.10.16] Updated a list of confirmed versions.
 - [2024.08.31] Updated a list of confirmed versions.

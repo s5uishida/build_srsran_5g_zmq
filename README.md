@@ -141,6 +141,23 @@ pcap:
   ngap_filename: /tmp/gnb_ngap.pcap # Path where the NGAP PCAP is stored.
 ```
 Then, edit `gnb_zmq.yaml` with reference to [this](https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html#id1) according to your environment.
+When setting the IP address of the N3 interface, add the following parameter and set the appropriate IP address.
+```diff
+--- gnb_zmq.yaml.orig   2025-01-15 18:27:10.000000000 +0900
++++ gnb_zmq.yaml        2025-03-20 17:20:34.482444842 +0900
+@@ -16,6 +16,11 @@
+               - sst: 1
+   inactivity_timer: 7200            # Sets the UE/PDU Session/DRB inactivity timer to 7200 seconds. Supported: [1 - 7200].
+ 
++cu_up:
++  ngu:
++    socket:                               # Define socket(s) for NG-U interface.
++      - bind_addr: 127.0.3.1              # Optional TEXT (auto). Sets local IP address to bind for N3 interface. Format: IPV4 or IPV6 IP address.
++
+ ru_sdr:
+   device_driver: zmq                # The RF driver name.
+   device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
+```
 
 <a id="issues"></a>
 

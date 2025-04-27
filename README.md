@@ -179,6 +179,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.10+ | `644263b5a7c7b98b892bc1120940ae8d801eaee0` | 2025.04.23 | 5 |
 | 24.10+ | `2be82d8ea38e3a729850b702254952c04118cc38` | 2025.03.14 | 5 |
 | 24.10+ | `e5d5b44b92cf18d1bd1736da0148e5f9cce3721d` | 2024.12.03 | 5 |
 | 24.10 | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d` | 2024.10.14 | 3 |
@@ -203,6 +204,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2025.04.27] Updated a list of confirmed versions.
 - [2025.03.16] Updated a list of confirmed versions.
 - [2024.12.21] Updated a list of confirmed versions.
 - [2024.10.16] Updated a list of confirmed versions.

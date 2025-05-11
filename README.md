@@ -41,7 +41,7 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 ## Install the required libraries including ZeroMQ
 
 ```
-apt install cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev libzmq3-dev
+# apt install cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev libzmq3-dev
 ```
 
 <a id="clone_srsran"></a>
@@ -49,7 +49,7 @@ apt install cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-de
 ## Clone srsRAN_Project
 
 ```
-git clone https://github.com/srsran/srsRAN_Project.git
+# git clone https://github.com/srsran/srsRAN_Project.git
 ```
 
 <a id="build"></a>
@@ -57,19 +57,19 @@ git clone https://github.com/srsran/srsRAN_Project.git
 ## Build srsRAN_Project 5G RAN
 
 ```
-cd srsRAN_Project
-mkdir build
-cd build
-cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON
-make -j`nproc`
+# cd srsRAN_Project
+# mkdir build
+# cd build
+# cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON
+# make -j`nproc`
 ```
 If you do not want to build `tests` target, add `-DBUILD_TESTS=OFF` option.
 ```
-cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DBUILD_TESTS=OFF
+# cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DBUILD_TESTS=OFF
 ```
 According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#discussioncomment-6576652), when building with Virtualbox VM, if you don't worry about running it in real-time, you could add `-DAUTO_DETECT_ISA=OFF` option.
 ```
-cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
+# cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
 ```
 
 <a id="create_gnb_config"></a>
@@ -78,8 +78,8 @@ cmake ../ -DENABLE_EXPORT=ON -DENABLE_ZEROMQ=ON -DAUTO_DETECT_ISA=OFF
 
 Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup) as the original file.
 ```
-cd srsRAN_Project/build/apps/gnb
-wget <link of "gNB config">
+# cd srsRAN_Project/build/apps/gnb
+# wget <link of "gNB config">
 ```
 For reference, `gnb_zmq.yaml` on 2025.01.15 is as follows.
 ```yaml
@@ -179,6 +179,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 24.10+ | `122a1377e33f0071e2aa88028cf29740106654f5` | 2025.05.07 | 5 |
 | 24.10+ | `644263b5a7c7b98b892bc1120940ae8d801eaee0` | 2025.04.23 | 5 |
 | 24.10+ | `2be82d8ea38e3a729850b702254952c04118cc38` | 2025.03.14 | 5 |
 | 24.10+ | `e5d5b44b92cf18d1bd1736da0148e5f9cce3721d` | 2024.12.03 | 5 |
@@ -204,6 +205,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2025.05.11] Updated a list of confirmed versions.
 - [2025.04.27] Updated a list of confirmed versions.
 - [2025.03.16] Updated a list of confirmed versions.
 - [2024.12.21] Updated a list of confirmed versions.

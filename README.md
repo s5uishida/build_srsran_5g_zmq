@@ -29,6 +29,7 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 - [Clone srsRAN_Project](#clone_srsran)
 - [Build srsRAN_Project 5G RAN](#build)
 - [Create the configuration file of gNodeB](#create_gnb_config)
+  - [Add a Slice configuration](#add_slice)
 - [Issues](#issues)
 - [Confirmed Version List](#ver_list)
 - [Sample Configurations](#sample_conf)
@@ -157,6 +158,28 @@ When setting the IP address of the N3 interface, add the following parameter and
  ru_sdr:
    device_driver: zmq                # The RF driver name.
    device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
+```
+
+<a id="add_slice"></a>
+
+### Add a Slice configuration
+
+The following SST/SD values are in decimal notation.
+For example, SST=0x1 and SD=0x010203 are expressed in decimal as follows.
+```diff
+cu_cp:
+  amf:
+    addr: 10.53.1.2                 # The address or hostname of the AMF.
+    port: 38412
+    bind_addr: 10.53.1.1            # A local IP that the gNB binds to for traffic from the AMF.
+    supported_tracking_areas:
+      - tac: 7
+        plmn_list:
+          - plmn: "00101"
+            tai_slice_support_list:
+-->           - sst: 1
+-->             sd: 66051
+  inactivity_timer: 7200            # Sets the UE/PDU Session/DRB inactivity timer to 7200 seconds. Supported: [1 - 7200].
 ```
 
 <a id="issues"></a>

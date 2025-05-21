@@ -1,5 +1,5 @@
 # Build srsRAN_Project 5G RAN with ZeroMQ
-srsRAN_Project software suite includes a virtual radio which uses the ZeroMQ networking library to transfer radio samples between applications. Therefore, in order to confirm the facilities of 5GC, I will describe the simple procedure for building the virtual gNodeB instead of the real device.
+[srsRAN_Project](https://github.com/srsran/srsRAN_Project) software suite includes a virtual radio which uses the ZeroMQ networking library to transfer radio samples between applications. Therefore, in order to confirm the facilities of 5GC, I will describe the simple procedure for building the virtual gNodeB instead of the real device.
 
 Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 - Installation Guide - https://docs.srsran.com/projects/project/en/latest/user_manuals/source/installation.html

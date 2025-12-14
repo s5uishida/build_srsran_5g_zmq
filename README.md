@@ -9,9 +9,9 @@ Please refer to the following for building srsRAN_Project 5G RAN with ZeroMQ.
 The specification of the VM that have been confirmed to work is as follows.
 | OS | CPU (Min) | Memory (Min) | HDD (Min) |
 | --- | --- | --- | --- |
-| Ubuntu 24.04 | 4 | 4GB | 10GB |
+| Ubuntu 24.04 | 5 | 4GB | 10GB |
 
-**4GB or more memory is required to build. And 4 CPU cores or more are required to run.**
+**4GB or more memory is required to build. And 5 CPU cores or more are required to start up and accept connections from UEs.**
 
 Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5uishida/build_srsran_4g_zmq_disable_rf_plugins) for how to build and configure this RF simulated UE.
 
@@ -193,6 +193,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 3. According to [here](https://github.com/srsran/srsRAN_Project/issues/241#issuecomment-1756599022), 2 CPU cores or more are required to run.
 4. According to [here](https://github.com/srsran/srsRAN_Project/issues/263), UE(`ue_zmq.conf`) failed to connect to Open5GS via gNodeB of srsRAN_Project 23.10. [This](https://github.com/srsran/srsRAN_Project/issues/263#issuecomment-1773756230) solved it.
 5. According to [here](https://github.com/srsran/srsRAN_Project/discussions/995#discussioncomment-11634006), 4 CPU cores or more are required to run.
+6. 5 CPU cores or more are required to start up and accept connections from UEs.
 
 <a id="ver_list"></a>
 
@@ -202,6 +203,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 25.04+ | `d90cd4e26dba7ad652d16006045eca25ea272315` | 2025.07.28 | 6 |
 | 24.10+ | `122a1377e33f0071e2aa88028cf29740106654f5` | 2025.05.07 | 5 |
 | 24.10+ | `644263b5a7c7b98b892bc1120940ae8d801eaee0` | 2025.04.23 | 5 |
 | 24.10+ | `2be82d8ea38e3a729850b702254952c04118cc38` | 2025.03.14 | 5 |
@@ -228,6 +230,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2025.12.14] Updated a list of confirmed versions.
 - [2025.05.11] Updated a list of confirmed versions.
 - [2025.04.27] Updated a list of confirmed versions.
 - [2025.03.16] Updated a list of confirmed versions.

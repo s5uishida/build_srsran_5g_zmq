@@ -203,6 +203,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 25.04+ | `fc4e810b949f9db6103ead39f71e01d7ac14296f` | 2025.09.11 | 6 |
 | 25.04+ | `d90cd4e26dba7ad652d16006045eca25ea272315` | 2025.07.28 | 6 |
 | 24.10+ | `122a1377e33f0071e2aa88028cf29740106654f5` | 2025.05.07 | 5 |
 | 24.10+ | `644263b5a7c7b98b892bc1120940ae8d801eaee0` | 2025.04.23 | 5 |

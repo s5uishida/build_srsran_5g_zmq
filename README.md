@@ -205,6 +205,7 @@ I simply confirmed the operation of the following versions.
 
 | Version | Commit | Date | Issues |
 | --- | --- | --- | -- |
+| 25.10+ | `4bf1543936d062686d64c10724d2f27a9854f065` | 2026.02.16 | 6 |
 | 25.10 | `d2f4b70dda8e2c557d5b05a0ac5f92dbddda19bc` | 2025.11.11 | 6 |
 | 25.04+ | `9e0374d9a46cc9a3f4d5110612c5826398f4c667` | 2025.11.10 | 6 |
 | 25.04+ | `fc4e810b949f9db6103ead39f71e01d7ac14296f` | 2025.09.11 | 6 |
@@ -235,6 +236,7 @@ I simply confirmed the operation of the following versions.
 
 ## Changelog (summary)
 
+- [2026.02.19] Updated a list of confirmed versions.
 - [2025.12.14] Updated a list of confirmed versions.
 - [2025.05.11] Updated a list of confirmed versions.
 - [2025.04.27] Updated a list of confirmed versions.

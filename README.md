@@ -11,7 +11,7 @@ The specification of the VM that have been confirmed to work is as follows.
 | --- | --- | --- | --- |
 | Ubuntu 24.04 | 5 | 4GB | 10GB |
 
-**4GB or more memory is required to build. And 5 CPU cores or more are required to start up and accept connections from UEs, but this issue regarding the number of CPU cores may be unique to my environment.**
+**4GB or more memory is required to build. And 5 CPU cores or more are required to start up and accept connections from UEs, but this constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
 Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5uishida/build_srsran_4g_zmq_disable_rf_plugins) for how to build and configure this RF simulated UE.
 
@@ -188,7 +188,7 @@ cu_cp:
 ## Issues
 
 If the latest `main` branch doesn't work, you may try the latest `release` version.
-**This issue regarding the number of CPU cores may be unique to my environment.**
+**This constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
 1. If the `gnb` on Virtualbox VM fails to do `NGSetup`, [this](https://github.com/srsran/srsRAN_Project/issues/172#issuecomment-1681908406) might help to solve it.
 2. According to [here](https://github.com/srsran/srsRAN_4G/issues/1213), there is an issue where downlink packets stop flowing between srsue and srsgnb via ZeroMQ. The hotfix is [here](https://github.com/srsran/srsRAN_4G/issues/1213#issuecomment-1703512937).

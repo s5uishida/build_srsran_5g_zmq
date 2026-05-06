@@ -47,6 +47,10 @@ Also, when connecting by 5G NR-UE with ZeroMQ, see [here](https://github.com/s5u
 ```
 # apt install cmake make gcc g++ pkg-config libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libgtest-dev libzmq3-dev
 ```
+To run the built binaries, only need to install the following packages.
+```
+# apt install libfftw3-dev libmbedtls-dev libsctp-dev libyaml-cpp-dev libzmq3-dev
+```
 
 <a id="clone_srsran"></a>
 

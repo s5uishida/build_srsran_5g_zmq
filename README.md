@@ -84,12 +84,12 @@ According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#dis
 
 ## Create the configuration file of gNodeB
 
-Get `gNB config` of [ZeroMQ-based Setup](https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#zeromq-based-setup) as the original file.
+Get [gnb_zmq.yaml](https://raw.githubusercontent.com/srsran/srsRAN_Project_docs/refs/heads/main/docs/source/tutorials/source/srsUE/source/.config/gnb_zmq.yaml) for srsRAN_Project as the original file.
 ```
 # cd srsRAN_Project/build/apps/gnb
-# wget <link of "gNB config">
+# wget https://raw.githubusercontent.com/srsran/srsRAN_Project_docs/refs/heads/main/docs/source/tutorials/source/srsUE/source/.config/gnb_zmq.yaml
 ```
-For reference, `gnb_zmq.yaml` on 2025.01.15 is as follows.
+For reference, `gnb_zmq.yaml` on 2025.01.09 is as follows.
 ```yaml
 # This configuration file example shows how to configure the srsRAN Project gNB to allow srsUE to connect to it. 
 # This specific example uses ZMQ in place of a USRP for the RF-frontend, and creates an FDD cell with 10 MHz bandwidth. 

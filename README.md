@@ -84,7 +84,7 @@ According to [this](https://github.com/srsran/srsRAN_Project/discussions/151#dis
 
 ## Create the configuration file of gNodeB
 
-Get [gnb_zmq.yaml](https://raw.githubusercontent.com/srsran/srsRAN_Project_docs/refs/heads/main/docs/source/tutorials/source/srsUE/source/.config/gnb_zmq.yaml) as the original file.
+Get [gnb_zmq.yaml](https://github.com/srsran/srsRAN_Project_docs/blob/main/docs/source/tutorials/source/srsUE/source/.config/gnb_zmq.yaml) as the original file.
 ```
 # cd srsRAN_Project/build/apps/gnb
 # wget https://raw.githubusercontent.com/srsran/srsRAN_Project_docs/refs/heads/main/docs/source/tutorials/source/srsUE/source/.config/gnb_zmq.yaml

@@ -148,8 +148,8 @@ pcap:
   ngap_enable: false                # Set to true to enable NGAP PCAPs.
   ngap_filename: /tmp/gnb_ngap.pcap # Path where the NGAP PCAP is stored.
 ```
-The examples of `Channel Bandwidth`, `SubCarrier Spacing (SCS)`, `FFT Size`, `Sampling Rate`, `Number of Resource Blocks (NRB)` and `controlResourceSetZero` are as follows.
-| Channel Bandwidth | SCS(1) | FFT Size(2) | Sampling Rate(=(1)*(2)) | NRB | controlResourceSetZero |
+The examples of `Channel Bandwidth`, `SubCarrier Spacing (SCS)`, `FFT Size`, `Sampling Rate`, `Number of Resource Blocks (NRB)` and `controlResourceSetZero (CORESET #0)` are as follows.
+| Channel Bandwidth | SCS(1) | FFT Size(2) | Sampling Rate(=(1)*(2)) | NRB | CORESET #0 |
 | --- | --- | --- | --- | --- | --- |
 | 10 MHz | 15 kHz | 768 (maybe) | 11.52 MHz | 52 | 6 |
 | 20 MHz | 15 kHz | 1536 (maybe) | 23.04 MHz | 106 | 12 |

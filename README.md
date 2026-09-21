@@ -160,8 +160,17 @@ Please refer to the following for details on the above parameters.
 - 3GPP TS 38.213 - 12 Bandwidth part operation
 - 3GPP TS 38.213 - 13 UE procedure for monitoring Type0-PDCCH CSS sets
 
-Then, edit `gnb_zmq.yaml` with reference to [this](https://docs.srsran.com/projects/project/en/latest/user_manuals/source/config_ref.html#id1) according to your environment.
-When setting the IP address of the N3 interface, add the following parameter and set the appropriate IP address.
+Then, edit `gnb_zmq.yaml` with reference to [this](https://ocudu-docs-604e90.gitlab.io/user_manual/config_reference/#configuration-reference-1) according to your environment.
+First, when using the ZeroMQ virtual radio driver, the channel gain must be set to 0.0 dB or less.
+```yaml
+ru_sdr:
+  device_driver: zmq                # The RF driver name.
+  device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
+  srate: 23.04                      # RF sample rate might need to be adjusted according to selected bandwidth.
+  tx_gain: 0 <--                    # Transmit gain of the RF might need to adjusted to the given situation.
+  rx_gain: 0 <--                    # Receive gain of the RF might need to adjusted to the given situation.
+```
+And when setting the IP address of the N3 interface, add the following parameter and set the appropriate IP address.
 ```diff
 --- gnb_zmq.yaml.orig   2025-01-15 18:27:10.000000000 +0900
 +++ gnb_zmq.yaml        2025-12-20 08:33:45.071389208 +0900
@@ -178,15 +187,6 @@ When setting the IP address of the N3 interface, add the following parameter and
  ru_sdr:
    device_driver: zmq                # The RF driver name.
    device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
-```
-First, when using the ZeroMQ virtual radio driver, the channel gain must be set to 0.0 dB or less.
-```yaml
-ru_sdr:
-  device_driver: zmq                # The RF driver name.
-  device_args: tx_port=tcp://127.0.0.1:2000,rx_port=tcp://127.0.0.1:2001,base_srate=23.04e6 # Optionally pass arguments to the selected RF driver.
-  srate: 23.04                      # RF sample rate might need to be adjusted according to selected bandwidth.
-  tx_gain: 0 <--                    # Transmit gain of the RF might need to adjusted to the given situation.
-  rx_gain: 0 <--                    # Receive gain of the RF might need to adjusted to the given situation.
 ```
 
 <a id="add_slice"></a>

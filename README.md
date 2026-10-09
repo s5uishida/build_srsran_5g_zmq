@@ -227,7 +227,7 @@ If the latest `main` branch doesn't work, you may try the latest `release` versi
 
 <a id="ver_list"></a>
 
-## Confirmed Version List
+<details><summary><h2>Confirmed Version List</h2></summary>
 
 I simply confirmed the operation of the following versions.
 
@@ -252,6 +252,8 @@ I simply confirmed the operation of the following versions.
 | 23.10 | `e38e418bda8432397b2fa7dc399cb7afde3c3b95` | 2023.10.20 | 3, 4 |
 | 23.5+ | `5e6f50a202c6efa671d5b231d7c911dc6c3d86ed` | 2023.09.20 | 3 |
 | 23.5+ | `1afd7240f2b5e2061ab4158e8fcdacb15961813a` | 2023.08.07 | 1, 2 |
+
+</details>
 
 <a id="sample_conf"></a>
 
